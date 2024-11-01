@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Your favourite music is here</title>
+    <link rel="stylesheet" href="{% static 'Spotify-songs/style.css' %}" />
+    <link rel="icon" type="image/x-icon" href="{% static 'Spotify-songs/icon.png' %}" />
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <ul>
+          <li class="brand"><img src="{% static 'Spotify-songs/logo.png' %}" alt="Spotify" /> <a href="">Spotify</a></li>
+          <li class="header"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'help' %}">About</a></li>
+        </ul>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Best of SPOTIFY</h1>
+        <div id="songs">
+          <!-- Container 1 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3Pwmf3xVA8MV6h2isY6whx?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 2 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6TxZhb5ehztxGI3YCTdqIv?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 3 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3bjfTdFRjudsCHvEl19l5w?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 4 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5f1j3h5DBkLpGfb90QGFvR?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 5 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2tH28YyKYOldxhuBHoI79M?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 6 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2vtmY2mSccRzKGjtcHSzI3?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 7 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0mCCXlbgZTOAR8y6LAtNIm?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 8 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+             <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3jjsRKEsF42ccXf8kWR3nu?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 9 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7LOR8Rdc5n2EkduOXZeTp6?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Container 10 -->
+          <div class="songItemContainer">
+            <div class="songItem">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/01lTSn2mrimc9wSl2EG4F8?utm_source=generator" width="100%" height="100" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{% static 'Spotify-songs/script.js' %}"></script>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script>
+      function change() {
+        document.getElementById("1").style.backgroundImage = "url(sq.jpg)";
+      }
+    </script>
+  </body>
+</html>
